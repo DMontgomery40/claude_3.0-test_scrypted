@@ -1,0 +1,33 @@
+{
+    "name": "scrypted-shelly-plugin",
+    "version": "1.0.0",
+    "description": "Scrypted plugin for Shelly devices",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "scrypted-webpack",
+      "prepublishOnly": "NODE_ENV=production scrypted-webpack",
+      "prescrypted-vscode-launch": "scrypted-webpack",
+      "scrypted-vscode-launch": "scrypted-deploy-debug",
+      "scrypted-deploy-debug": "scrypted-deploy-debug",
+      "scrypted-debug": "scrypted-debug",
+      "scrypted-deploy": "scrypted-deploy",
+      "scrypted-readme": "scrypted-readme",
+      "scrypted-package-json": "scrypted-package-json"
+    },
+    "keywords": [
+      "scrypted",
+      "plugin",
+      "shelly"
+    ],
+    "scrypted": {
+      "name": "Shelly Plugin",
+      "type": "DeviceProvider",
+      "interfaces": [
+        "DeviceProvider",
+        "Settings"
+      ]
+    },
+    "dependencies": {
+      "@scrypted/sdk": "^0.2.56"
+    }
+  }

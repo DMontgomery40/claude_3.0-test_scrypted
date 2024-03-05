@@ -1,0 +1,14 @@
+{
+    "sockets": {
+      "socket1": {
+        "name": "Socket 1",
+        "type": "string",
+        "placeholder": "wss://<HOST>:6113/shelly/wss/hk_sock?t=<JWT>"
+      }
+    },
+    "socketServer": {
+      "name": "Socket Server",
+      "type": "string",
+      "placeholder": "URL to receive user permissions"
+    }
+  }
